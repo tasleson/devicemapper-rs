@@ -15,7 +15,7 @@ use crate::{
 /// A struct containing the device's major and minor numbers
 ///
 /// Also allows conversion to/from a single 64bit dev_t value.
-#[derive(Debug, PartialEq, Eq, Clone, Copy, Hash)]
+#[derive(Debug, Ord, PartialOrd, PartialEq, Eq, Clone, Copy, Hash)]
 pub struct Device {
     /// Device major number
     pub major: u32,
